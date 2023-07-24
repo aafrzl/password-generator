@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #1f2937;
+  text-align: center;
+  color: #d5d4d8;
+  padding: 30px 40px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  font-size: 40px;
+  font-weight: 800;
+  color: #4adf86;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #2f3e53;
+  margin: 20px auto;
+}
+
+.container p {
+  font-size: medium;
+  font-weight: 400;
+  margin: 10px 0 50px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 28px;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #2f3e53;
+  box-shadow: 8px 8px 100px #2f3e53;
+}
+
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.checkbox_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  height: 3vh;
+  border-radius: 5px;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px auto;
+  background: #2f3e53;
+  color: #d5d4d8;
+  outline: none;
+}
+
+.btn-generate {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px auto;
+  background: #10b981;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-generate:hover {
+  background: #3fd77f;
+}
+
+.info {
+  display: none;
+}
+
+.result-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 28px;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #2f3e53;
+  box-shadow: 8px 8px 100px #2f3e53;
+}
+
+.result-container p {
+  font-size: small;
+  font-weight: 400;
+}
+
+.result-container h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+#passwords {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#password {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #273549;
+  margin: 10px;
+  cursor: pointer;
+  user-select: all;
+}
+
+#useSymbolsNumbers {
+  margin: 20px auto 20px 10px;
+  width: 18px;
+  height: 18px;
+  transition: box-shadow 0.3s;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#useSymbolsNumbers:checked {
+  box-shadow: inset 0 0 0 20px #7dd3fc;
+}

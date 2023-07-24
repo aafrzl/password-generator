@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Password Generator App</title>
+    <meta name="description" content="An awesome app Password Generator built with HTML, CSS and Javascript this is project for to completed my task in solo project Scrimba">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generator a <br /><span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <div class="input_wrapper">
+            <label for="length">Password Length</label>
+            <input type="number" id="length" value="15" min="6" max="15" required="true">
+        </div>
+        <div class="checkbox_wrapper">
+            <label for="useSymbolsNumbers">Include Symbol & Number</label>
+            <input id="useSymbolsNumbers" type="checkbox">
+        </div>
+        <button class="btn-generate" onclick="generatePasswords()">Generate Password</button>
+    </div>
+    <hr>
+    <div class="result-container">
+        <div class="info">
+            <h2>Your Password Result</h2>
+            <p>Click result to copy your password and save into clipboard</p>
+        </div>
+        <div id="passwords"></div>
+        <p id="alert-copy"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
