@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="index.css">
     <title>Password Generator App</title>
-    <meta name="description" content="An awesome app Password Generator built with HTML, CSS and Javascript this is project for to completed my task in solo project Scrimba">
+    <meta name="description"
+        content="An awesome app Password Generator built with HTML, CSS and Javascript this is project for to completed my task in solo project Scrimba">
 </head>
 
 <body>
@@ -17,8 +18,10 @@
             <input type="number" id="length" value="15" min="6" max="15" required="true">
         </div>
         <div class="checkbox_wrapper">
-            <label for="useSymbolsNumbers">Include Symbol & Number</label>
-            <input id="useSymbolsNumbers" type="checkbox">
+            <label for="useSymbolsNumbers" class="checkbox-label">
+                Include Symbol & Number
+            </label>
+            <input class="checkbox" type="checkbox" id="useSymbolsNumbers">
         </div>
         <button class="btn-generate" onclick="generatePasswords()">Generate Password</button>
     </div>
